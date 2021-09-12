@@ -1,0 +1,58 @@
+.menuBox {
+  display: flex;
+  align-items: center;
+}
+.filter[open] {
+  position: absolute;
+  left: 0;
+  top: 48px;
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.7s ease-in-out;
+  background-color: #21201f85;
+  z-index: 5;
+}
+.menu {
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #21201f;
+  transition: left 0.7s ease-in-out;
+  top: 48px;
+  bottom: 0;
+  left: -200%;
+  width: fit-content;
+  height: 100vh;
+  z-index: 10;
+}
+.menu[open] {
+  left: 0;
+}
+.menuItem {
+  padding: 8px 24px;
+  text-transform: uppercase;
+}
+.menuItem:hover {
+  background-color: #ef6817;
+}
+.menuButton {
+  padding: 8px;
+  width: fit-content;
+  border: 1px solid transparent;
+}
+.menuMobile {
+  position: relative;
+}
+.menuClose {
+  cursor: pointer;
+  align-self: flex-end;
+  padding: 4px 6px;
+  color: inherit;
+  width: fit-content;
+  background-color: transparent;
+  border: none;
+}
+.menuClose:hover {
+  color: #ef6817;
+}
