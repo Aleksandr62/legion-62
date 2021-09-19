@@ -1,0 +1,12 @@
+.loginBox {
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-width: 300px;
+  overflow: hidden;
+}
+.actions {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
