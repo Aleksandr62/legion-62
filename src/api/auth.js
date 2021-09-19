@@ -5,12 +5,11 @@ const auth = getAuth();
 
 export const get = async (url, email, password) => {
   try {
-    console.log("auth-get-5", email, password);
     const { user } = await signInWithEmailAndPassword(auth, email, password);
-    console.log("auth-get-8", user);
+console.log('firebase-----------------------get',user)
     const data = user
       ? { email: user.email, name: user.displayName, role: "admin" }
-      : null;
+      : { email: '', name: '', role: "" };
     return data;
   } catch (e) {
     console.log("Error", e);
